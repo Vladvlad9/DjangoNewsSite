@@ -1,0 +1,15 @@
+{% load news_tags%}
+{% comment%}
+<div class="list-group">
+    {% get_list_categories as categories %}
+    <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+        Категории
+    </a>
+    {% for category in categories %}
+    <a href="/category/{{category.pk}}"
+       class="list-group-item list-group-item-action">{{category.name_category}}</a>
+    {% endfor %}
+</div>
+{% endcomment%}
+
+{% show_category %}
