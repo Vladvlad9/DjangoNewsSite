@@ -17,7 +17,10 @@
             <div class="col-md-3">
                 {% block sidebar %} SIDEBAR {% endblock %}
             </div>
+
             <div class="col-md-9">
+                {% if messages %}
+                {% endif %}
                 {% block content %} CONTENT {% endblock %}
             </div>
         </div>
